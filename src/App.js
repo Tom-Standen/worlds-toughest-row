@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme'; // Import the theme you defined
 import './App.css';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import IntroSection from './components/IntroSection';
+import TimeSection from './components/TimeSection';
+import CrewSection from './components/CrewSection';
+// Import other components here
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}> {/* Wrap your components with ThemeProvider */}
+      <div className="App">
+        <Navbar />
+        <HeroSection />
+        <IntroSection />
+        <TimeSection />
+        <CrewSection />
+        {/* Include other components here */}
+      </div>
+    </ThemeProvider>
   );
 }
 
