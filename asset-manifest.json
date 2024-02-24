@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/worlds-toughest-row/static/css/main.700dda4a.css",
+    "main.js": "/worlds-toughest-row/static/js/main.7afeea35.js",
+    "static/js/453.77aef9b5.chunk.js": "/worlds-toughest-row/static/js/453.77aef9b5.chunk.js",
+    "static/media/crew_old.png": "/worlds-toughest-row/static/media/crew_old.01ab6686d5592476e172.png",
+    "static/media/crew_young.png": "/worlds-toughest-row/static/media/crew_young.899897b44b187c59c70f.png",
+    "static/media/crew_girl.png": "/worlds-toughest-row/static/media/crew_girl.4c2dc5edd6f070f4240b.png",
+    "static/media/crew_boy.png": "/worlds-toughest-row/static/media/crew_boy.ebe5910bba3ba0789aeb.png",
+    "static/media/hero.png": "/worlds-toughest-row/static/media/hero.e5a1296aa7cdb6e2f530.png",
+    "index.html": "/worlds-toughest-row/index.html",
+    "main.700dda4a.css.map": "/worlds-toughest-row/static/css/main.700dda4a.css.map",
+    "main.7afeea35.js.map": "/worlds-toughest-row/static/js/main.7afeea35.js.map",
+    "453.77aef9b5.chunk.js.map": "/worlds-toughest-row/static/js/453.77aef9b5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.700dda4a.css",
+    "static/js/main.7afeea35.js"
+  ]
+}
