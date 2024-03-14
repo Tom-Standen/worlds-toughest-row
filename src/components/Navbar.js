@@ -5,12 +5,17 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import logo from '../assets/logo.png';
+import { Box, } from '@mui/material';
 
 function Navbar() {
   return (
     <AppBar position="absolute" sx={{ background: 'transparent', boxShadow: 'none' }}>
       <Toolbar>
-        <IconButton
+        <Box sx={{ flexGrow: 1 }} >
+          <img src={logo} alt="Southsea Scullers" style={{ maxWidth: '100px', height: 'auto',}} />
+        </Box>
+        {/* <IconButton
           size="large"
           edge="start"
           color="inherit"
@@ -18,15 +23,15 @@ function Navbar() {
           sx={{ mr: 2 }}
         >
           <MenuIcon />
-        </IconButton>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        </IconButton> */}
+        {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Southsea Scullers
-        </Typography>
-        <Button color="inherit">The Crew</Button>
-        <Button color="inherit">The Challenge</Button>
-        <Button color="inherit">The Charity</Button>
+        </Typography> */}
+        <Button href="#challenge" color="inherit">The Challenge</Button>
+        <Button href="#crew" color="inherit">The Crew</Button>
+        <Button href='#charities' color="inherit">The Cause</Button>
         {/* sponsor should take you to this url: https://www.gofundme.com/f/journey-to-the-atlantic-twac-2025 */}
-        <Button color="inherit" href="https://www.gofundme.com/f/journey-to-the-atlantic-twac-2025">Sponsor</Button>
+        <Button href='#sponsor' color="inherit">Sponsor</Button>
       </Toolbar>
     </AppBar>
   );

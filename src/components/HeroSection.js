@@ -17,12 +17,12 @@ function HeroSection() {
         alignItems: 'center',
       }}
     >
-      <Container maxWidth="md" sx={{ textAlign: 'center', paddingBottom: '10%'}}>
+      <Container maxWidth="md" sx={{ textAlign: 'center', paddingBottom: '15%'}}>
         <Typography variant="h2" component="h1" gutterBottom>
           Southsea Scullers
         </Typography>
         <Typography variant="h4" component="h2" gutterBottom>
-          Sculling the atlantic for MSA & Parkinson's 
+          Rowing the Atlantic for MSA Trust & Cure Parkinson’s.
         </Typography>
       </Container>
     </Box>

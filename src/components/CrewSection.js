@@ -1,49 +1,53 @@
 import React from 'react';
 import { Box, Divider, Typography, Container, Grid, Card, CardContent, CardMedia } from '@mui/material';
-import crewGirl from '../assets/crew_girl.png';
-import crewYoung from '../assets/crew_young.png';
-import crewBoy from '../assets/crew_boy.png';
-import crewOld from '../assets/crew_old.png';
+// import crewGirl from '../assets/crew_girl.png';
+// import crewYoung from '../assets/crew_young.png';
+// import crewBoy from '../assets/crew_boy.png';
+// import crewOld from '../assets/crew_old.png';
+import cress from '../assets/cress.jpg';
+import gj from '../assets/gj.jpg';
+import zachs from '../assets/zachs.jpg';
+import sam from '../assets/sam.jpg';
 
 
 // Example images for each crew member - replace these with actual image paths
 const crewMembers = [
   {
-    name: 'George Johnson, 29 (Captain)',
+    name: 'George Johnson, 29',
     role: 'Participant for a Cause',
-    bio: 'Mike is taking part in the challenge to raise money for a fantastic cause and to show his daughters that anything is possible...',
-    image: crewBoy,
+    bio: "With the most serious sounding job of us all, he's surprisingly unserious. Strong like a rampaging rhino, expect some serious power output on the oars.",
+    image: gj,
   },
   {
-    name: 'Sam Gibbons, 29 (Vice Captain)',
+    name: 'Sam Gibbons, 29',
     role: 'Accomplished Navigator',
-    bio: 'Jack is an accomplished navigator, but think his ears\' ability to catch Atlantic trade winds might be his biggest asset...',
-    image: crewGirl, 
+    bio: "The Southsea Scullers are Gibbo's brainchild. He answered the call of the sea and brought the team together (much to their girlfriend's collective disappointment).",
+    image: sam, 
   },
   {
     name: 'Adam Cresswell, 29',
     role: 'Enthusiastic Endurance Amateur',
-    bio: 'Dan calls himself an enthusiastic endurance amateur and the (sometimes) steady head on an unsteady ship. He grew up in Yorkshire and now lives in London...',
-    image: crewOld, 
+    bio: 'Cress is the cardio specialist and the CHIEF MUSIC OFFICER for this voyage. What he lacks in height, he makes up for in lung capacity.',
+    image: cress, 
   },
   {
     name: 'Alex Zacharius, 28',
     role: 'Admin and Music Playlist Lead',
-    bio: 'JC is the admin and music playlist lead in the team. And because the row was his idea, he says he is ready to take the flack...',
-    image: crewYoung, 
+    bio: 'Zachs boasts what is sured to be the best moustache on all the Seven Seas and will be the voice of reason through this journey.',
+    image: zachs, 
   },
 ];
 
 function CrewSection() {
   return (
-    <Box sx={{ backgroundColor: '#fff', padding: '8rem 0' }}>
+    <Box id="crew" sx={{ backgroundColor: '#fff', padding: '8rem 0' }}>
       <Container maxWidth="lg">
         <Typography variant="h4" component="h2" align="center" gutterBottom>
           THE CREW
         </Typography>
         <Divider variant="middle" sx={{ margin: '60px auto', width: '20%', backgroundColor: '#23395d' }} />
         <Typography variant="h6" align="center" sx={{ marginBottom: '2rem' }}>
-          We’re four 30/40-something blokes who like to push themselves now and then. Three of us work in fitness, but none of us are endurance pros, and only one of us has rowing experience. For all of us, this is the biggest challenge we’ve ever faced (other than having kids).
+        We’re four blokes in our late 20s who met at University, who share a common goal: to push our limits and find out what is possible. One of us works in fitness, one is an NHS physio, one is a project manager and the other an investment advisor. This will be the biggest challenge any of us has undertaken.
         </Typography>
         <Grid container spacing={4}>
           {crewMembers.map((member, index) => (
@@ -55,8 +59,8 @@ function CrewSection() {
                   image={member.image}
                   alt={member.name}
                 />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                <CardContent sx={{height: '200px'}}>
+                  <Typography gutterBottom variant="h5" component="div" sx={{height: '4rem'}}>
                     {member.name}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">

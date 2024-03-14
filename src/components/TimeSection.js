@@ -30,14 +30,14 @@ function TimeSection() {
   });
 
   return (
-    <Box sx={{ backgroundColor: '#23395d', color: '#fff', padding: '8rem 0' }}>
+    <Box id="challenge" sx={{ backgroundColor: '#23395d', color: '#fff', padding: '8rem 0' }}>
       <Container maxWidth="md">
         <Typography variant="h4" align="center" gutterBottom>
           THE CHALLENGE
         </Typography>
         <Divider variant="middle" sx={{ margin: '50px auto', width: '20%', backgroundColor: 'white' }} />
         <Typography variant="h6" align="center" gutterBottom>
-          Time until the 2022 race starts
+          Time until the 2025 race starts
         </Typography>
         <Box
           sx={{
@@ -57,7 +57,11 @@ function TimeSection() {
         </Typography>
         </Box>
         <Typography align="center">
-          The Talisker Whisky Atlantic Challenge is a 3,000-mile row from the Canary Islands to the West Indies. Every winter, up to 30 teams from around the world take on ‘The world’s toughest row’. In 2022, we’ll be joining them.
+          The World’s Toughest Row is a 3,000-mile race from the Canary Islands to Antigua. Every December, up to 30 teams from around the world take on the challenge, with the current record at 29 days, 14 hours and 34 minutes
+
+        </Typography>
+        <Typography align="center" sx={{marginTop: '30px'}}>        
+          In 2025, one of those teams will be us.
         </Typography>
       </Container>
     </Box>
