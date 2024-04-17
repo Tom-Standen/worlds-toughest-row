@@ -24,7 +24,7 @@ function CharitiesSection() {
                 <Box sx={{maxHeight: '220px', marginTop: '30px', width: '100%'}}>
                     <img src={cureParkinsonsLogo} alt="Cure Parkinson's" style={{ maxWidth: '100%', height: 'auto'   }} />
                 </Box>
-                <Box sx={{height: '320px'}}>
+                <Box sx={{maxHeight: '420px', width: '100%'}}>
                     <Typography variant="h6" align="center" gutterBottom>
                         What they do:
                     </Typography>
@@ -54,7 +54,7 @@ function CharitiesSection() {
                 <Box sx={{maxHeight: '250px', width: '100%'}}>
                     <img src={msaTrustLogo} alt="MSA Trust" style={{ maxWidth: '90%', height: 'auto' }} />
                 </Box>
-                <Box sx={{height: '320px'}}>
+                <Box sx={{maxHeight: '420px', width: '100%'}}>
                     <Typography variant="h6" align="center" gutterBottom>
                         What they do:
                     </Typography>
