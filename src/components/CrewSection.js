@@ -13,25 +13,29 @@ import sam from '../assets/sam.jpg';
 // Example images for each crew member - replace these with actual image paths
 const crewMembers = [
   {
-    name: 'George Johnson, 29',
+    name: 'George Johnson',
+    age: '29',
     role: 'Participant for a Cause',
     bio: "With the most serious sounding job of us all, he's surprisingly unserious. Strong like a rampaging rhino, expect some serious power output on the oars.",
     image: gj,
   },
   {
-    name: 'Sam Gibbons, 29',
+    name: 'Sam Gibbons',
+    age: '29',
     role: 'Accomplished Navigator',
     bio: "The Southsea Scullers are Gibbo's brainchild. He answered the call of the sea and brought the team together (much to their girlfriend's collective disappointment).",
     image: sam, 
   },
   {
-    name: 'Adam Cresswell, 29',
+    name: 'Adam Cresswell',
+    age: '29',
     role: 'Enthusiastic Endurance Amateur',
     bio: 'Cress is the cardio specialist and the CHIEF MUSIC OFFICER for this voyage. What he lacks in height, he makes up for in lung capacity.',
     image: cress, 
   },
   {
-    name: 'Alex Zacharius, 28',
+    name: 'Alex Zacharias',
+    age: '28',
     role: 'Admin and Music Playlist Lead',
     bio: 'Zachs boasts what is sured to be the best moustache on all the Seven Seas and will be the voice of reason through this journey.',
     image: zachs, 
@@ -59,10 +63,13 @@ function CrewSection() {
                   image={member.image}
                   alt={member.name}
                 />
-                <CardContent sx={{height: '200px'}}>
-                  <Typography gutterBottom variant="h5" component="div" sx={{height: '4rem'}}>
-                    {member.name}
+                <CardContent sx={{height: '220px'}}>
+                  <Typography variant="h6" component="div" sx={{height: '4rem'}}>
+                    {member.name}, {member.age}*
                   </Typography>
+                  {/* <Typography gutterBottom  component="div" sx={{height: '2rem'}}>
+                    Age on start line: {member.age}*
+                  </Typography> */}
                   <Typography variant="body2" color="text.secondary">
                     {member.bio}
                   </Typography>
@@ -71,6 +78,10 @@ function CrewSection() {
             </Grid>
           ))}
         </Grid>
+        <Typography sx={{marginTop: '2rem'}} variant="body2" color="text.secondary">
+          *Age on start line (Dec '25)
+        </Typography>
+      
       </Container>
     </Box>
   );
